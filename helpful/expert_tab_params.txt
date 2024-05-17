@@ -1,0 +1,60 @@
+System Prompt Configuration
+#please refer to gen.py for detailed explanation.
+System Prompt Type
+Auto: This means the system will automatically switch to the appropriate prompt type when using collections. For instance, it will switch to DocQA prompt when using collections.
+System Pre-Context
+Pre-Conversation: This is the text that is directly pre-appended without any prompt processing and appears before the conversation begins.
+Text Doc Q/A
+This is a list of strings used for document Q/A to bypass database queries.
+Query Pre-Prompt
+This text is added before the document text chunks in the prompt template.
+Query Prompt
+This text is added after the documents and is used to generate the response based on the provided documents.
+Summary Pre-Prompt
+This text is added before the documents in the prompt template and guides the model to write a concise summary.
+Summary Prompt
+This text is added after the document text chunks, focusing on the query if provided, to write a condensed and concise summary of key results.
+HYDE LLM Prompt
+This is the first prompt when using the HYDE approach, and the user query comes right after this in the template.
+LLaVa LLM Prompt Type
+Auto: This means the LLaVa prompt will be chosen automatically.
+Document Control
+Force Image-Audio Reader
+Caption, OCR, DocTR: These are the methods to read and interpret the image/audio content.
+Force PDF Reader
+PyMuPDF, Unstructured, PyPDF: These are the methods to read and interpret PDF files.
+Force URL Reader
+Unstructured, Selenium, PlayWright: These are the methods to read and interpret content from URLs.
+Number of document chunks
+10: This sets the number of document chunks (query) or pages/parts (summarize) to 10.
+LangChain Configuration
+Chunking
+Chunk size for document chunking: 512
+Document Sorting in LLM Context
+best_first: This is the method used for sorting documents in the LLM context.
+Document Handling Mode
+chunk: This is the mode used for handling documents in the LLM context.
+HYDE Configuration
+HYDE level
+0: HYDE approach for LLM getting an answer to embed is disabled.
+HYDE Embedding Template
+auto: HYDE approach for LLM getting an answer to embed is automatic.
+Only show final HYDE result
+Only final HYDE shown: This means only the final HYDE result will be shown.
+JSON docs mode
+JSON docs mode: This is to pass JSON to and get JSON back from LLM.
+LLM Control
+Stream output
+Stream output: This enables streaming of the output.
+Max. time
+600: This sets the maximum time to search for optimal output to 600 seconds.
+Temperature
+0: A lower value is deterministic, and a higher value is more creative.
+Top p
+1: Cumulative probability of tokens to sample from.
+Top k
+1: Number of tokens to sample from.
+Max output length
+1024: This sets the maximum length of the output to 1024 tokens.
+Repetition Penalty
+1.07: This sets the penalty for repeated tokens.

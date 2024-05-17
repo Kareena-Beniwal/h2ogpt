@@ -507,7 +507,7 @@ def go_gradio(**kwargs):
     # transcribe for gradio
     kwargs['gpu_id'] = str(kwargs['gpu_id'])
 
-    no_model_msg = 'h2oGPT [   !!! Please Load Model in Models Tab !!!   ]'
+    no_model_msg = 'AYUDH [   !!! Please Load Model in Models Tab !!!   ]'
     chat_name0 = get_chatbot_name(kwargs.get("base_model"),
                                   kwargs.get("llamacpp_dict", {}).get("model_path_llama"),
                                   kwargs.get("inference_server"),
@@ -1088,7 +1088,7 @@ def go_gradio(**kwargs):
 
         normal_block = gr.Row(visible=not base_wanted, equal_height=False, elem_id="col_container")
         with normal_block:
-            side_bar = gr.Column(elem_id="sidebar", scale=1, min_width=100, visible=kwargs['visible_side_bar'])
+            side_bar = gr.Column(elem_id="sidebar", scale=1, min_width=250, visible=kwargs['visible_side_bar'])
             with side_bar:
                 with gr.Accordion("Chats", open=False, visible=True):
                     radio_chats = gr.Radio(value=None, label="Saved Chats", show_label=False,
@@ -1259,6 +1259,66 @@ def go_gradio(**kwargs):
                                           type='filepath',
                                           elem_id="warning", elem_classes="feedback",
                                           )
+                    
+            toggle_btn = gr.Column(scale=0,elem_id='toggle_sidebar_btn',min_width=15,visible=kwargs['visible_side_bar'])
+
+            side_bar_text = gr.Textbox('on' if kwargs['visible_side_bar'] else 'off',visible=False, interactive=False)
+            with toggle_btn:
+                side_bar_btn=gr.Button("<<",size='sm',visible=True,elem_id='toggle_sidebar')
+                def visible_toggle_sidebar(x):
+                    x = 'off' if x == 'on' else 'on'
+                    return x, gr.update(visible=True if x == 'on' else False),gr.update(value='<<' if x == 'on' else '>>')
+                side_bar_btn.click(fn=visible_toggle_sidebar,
+                                inputs=side_bar_text,
+                                outputs=[side_bar_text, side_bar,side_bar_btn],
+                                **noqueue_kwargs)
+            side_bar_right = gr.Column(elem_id="sidebar_right", scale=1, min_width=150, visible=kwargs['visible_side_bar'])
+            with side_bar_right:
+                chat_history_tab = gr.TabItem("Chat History", visible=True)
+                with chat_history_tab:
+                    with gr.Row():
+                        with gr.Column(scale=1):
+                            remove_chat_btn = gr.Button(value="Remove Selected Saved Chats", visible=True, size='sm')
+                            flag_btn = gr.Button("Flag Current Chat", size='sm')
+                            export_chats_btn = gr.Button(value="Export Chats to Download", size='sm')
+                        with gr.Column(scale=4):
+                            pass
+                    with gr.Row():
+                        chats_file = gr.File(interactive=False, label="Download Exported Chats")
+                        chatsup_output = gr.File(label="Upload Chat File(s)",
+                                                 file_types=['.json'],
+                                                 file_count='multiple',
+                                                 elem_id="warning", elem_classes="feedback")
+                    with gr.Row():
+                        if 'mbart-' in kwargs['model_lower']:
+                            src_lang = gr.Dropdown(list(languages_covered().keys()),
+                                                   value=kwargs['src_lang'],
+                                                   label="Input Language")
+                            tgt_lang = gr.Dropdown(list(languages_covered().keys()),
+                                                   value=kwargs['tgt_lang'],
+                                                   label="Output Language")
+
+                    chat_exception_text = gr.Textbox(value="", visible=True, label='Chat Exceptions',
+                                                     interactive=False)
+                    with gr.Row():
+                        count_chat_tokens_btn = gr.Button(value="Count Chat Tokens",
+                                                          visible=not is_public and not kwargs['model_lock'],
+                                                          interactive=not is_public, size='sm')
+                        chat_token_count = gr.Textbox(label="Chat Token Count Result", value=None,
+                                                      visible=not is_public and not kwargs['model_lock'],
+                                                      interactive=False)
+
+            toggle_btn_right = gr.Column(scale=0, elem_id='toggle_sidebar_btn_right', min_width=15, visible=kwargs['visible_side_bar'])
+            side_bar_text_right = gr.Textbox('on' if kwargs['visible_side_bar'] else 'off', visible=False, interactive=False)
+            with toggle_btn_right:
+                side_bar_btn_right = gr.Button(">>", size='sm', visible=True, elem_id='toggle_sidebar_right')
+                def visible_toggle_sidebar_right(x):
+                    x = 'off' if x == 'on' else 'on'
+                    return x, gr.update(visible=True if x == 'on' else False), gr.update(value='>>' if x == 'on' else '<<')
+                side_bar_btn_right.click(fn=visible_toggle_sidebar_right,
+                                        inputs=side_bar_text_right,
+                                        outputs=[side_bar_text_right, side_bar_right, side_bar_btn_right],
+                                        **noqueue_kwargs)
 
             col_tabs = gr.Column(elem_id="col-tabs", scale=10)
             with col_tabs, gr.Tabs():

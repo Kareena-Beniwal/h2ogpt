@@ -1,0 +1,10 @@
+#to generate using llama 
+python generate.py --base_model='llama' --prompt_type=llama2 --score_model=None  --model_path_llama=llamacpp_path/llama-2-7b-chat.Q6_K.gguf --max_seq_len=4096 --auth_access=open --guest_name=guest --auth=auth.json
+
+
+#rohit
+python generate.py --auth_access=open --guest_name=guest --auth=auth.json --langchain_modes=['UserData','NewLaws','Lodha','Infosys','Reseach'] --langchain_mode_paths="{'UserData':'user_path','NewLaws':'new_laws_path','Lodha':'lodha_path','Infosys':'infosys_path','Reseach':'research_path'}" --langchain_mode_types="{'UserData':'shared','NewLaws':'shared','Lodha':'shared','Infosys':'shared','Research':'shared'}"
+
+#santosh
+
+python generate.py --auth_access=open --guest_name=guest --auth=auth.json --langchain_modes=['UserData','NewLaws','Lodha','Infosys','Research'] --langchain_mode_paths="{'UserData':'user_path','NewLaws':'new_laws_path','Lodha':'lodha_path','Infosys':'infosys_path','Research':'research_path'}" --langchain_mode_types="{'UserData':'shared','NewLaws':'shared','Lodha':'shared','Infosys':'shared','Research':'shared'}"

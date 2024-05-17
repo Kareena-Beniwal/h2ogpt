@@ -21,7 +21,6 @@ def make_css_base(select_string) -> str:
     
     #sidebar {
         order: 1;
-        
         @media (max-width: 463px) {
           order: 2;
         }
@@ -35,6 +34,57 @@ def make_css_base(select_string) -> str:
         }
     }
     
+      #toggle_sidebar{
+        order:2;
+        # margin-top: 20em;
+        border:none;
+        @media (max-width: 463px) {
+          order: 1;
+        }
+        background-color:transparent;
+        height: 100vh;
+
+    }
+    #toggle_sidebar_btn{
+        order:2;
+        border:none;
+        margin-top: 20em;
+        @media (max-width: 463px) {
+          order: 1;
+        }
+        background-color:transparent;
+        height: 100vh;
+
+    }
+    #sidebar_right {
+        order: 4;
+        @media (max-width: 463px) {
+        order: 2;
+        };
+        height: 100vh;
+    }
+
+    #toggle_sidebar_right {
+        order: 3;
+        border: none;
+        @media (max-width: 463px) {
+        order: 1;
+        }
+        background-color: transparent;
+        height:100vh;
+    }
+
+    #toggle_sidebar_btn_right {
+        order: 3;
+        border: none;
+        margin-top: 20em;
+        @media (max-width: 463px) {
+        order: 1;
+        }
+        background-color: transparent;
+        height: 100vh;
+
+    }
     #small_btn {
         margin: 0.6em 0em 0.55em 0;
         max-width: 20em;
@@ -112,7 +162,7 @@ def make_css_base(select_string) -> str:
     #add-button {
         position: absolute;
         top: 14px;
-        right: 75px;
+        right: 100px;
         
         display: flex;
         justify-content: center;
