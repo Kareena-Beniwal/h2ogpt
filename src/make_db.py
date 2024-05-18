@@ -11,7 +11,7 @@ from gpt_langchain import path_to_docs, get_some_dbs_from_hf, all_db_zips, some_
 from utils import H2O_Fire, makedirs, n_gpus_global
 
 
-def glob_to_db(user_path, chunk=True, chunk_size=512, verbose=False,
+def glob_to_db(user_path, chunk=True, chunk_size=1024, verbose=False,
                fail_any_exception=False, n_jobs=-1, url=None,
 
                # urls

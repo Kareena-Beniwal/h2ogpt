@@ -803,13 +803,13 @@ def get_accordion(x, font_size=2, head_acc=50):
 
 def get_url(x, from_str=False, short_name=False, font_size=2):
     if not from_str:
-        source = x.metadata['source']
+        source = x.metadata['source']+f"#page={x.metadata['page']}"
     else:
         source = x
     if short_name:
         source_name = get_short_name(source)
     else:
-        source_name = source
+        source_name = os.path.basename(source.split('#')[0])
     if source.startswith('http://') or source.startswith('https://'):
         return """<font size="%s"><a href="%s" target="_blank"  rel="noopener noreferrer">%s</a></font>""" % (
             font_size, source, source_name)

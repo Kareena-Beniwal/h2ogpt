@@ -220,7 +220,7 @@ def main(
 
         model_lock: typing.List[typing.Dict[str, str]] = None,
         model_lock_columns: int = None,
-        model_lock_layout_based_upon_initial_visible: bool = False,
+        model_lock_layout_based_upon_initial_visible: bool = True,
         fail_if_cannot_connect: bool = False,
 
         # input to generation
@@ -348,11 +348,11 @@ def main(
         visible_hosts_tab: bool = False,
 
         chat_tables: bool = False,
-        visible_h2ogpt_links: bool = True,
-        visible_h2ogpt_qrcode: bool = True,
+        visible_h2ogpt_links: bool = False,
+        visible_h2ogpt_qrcode: bool = False,
         visible_h2ogpt_logo: bool = True,
-        visible_chatbot_label: bool = True,
-        visible_all_prompter_models: bool = False,
+        visible_chatbot_label: bool = False,
+        visible_all_prompter_models: bool = True,
         visible_curated_models: bool = True,
         actions_in_sidebar: bool = False,
         document_choice_in_sidebar: bool = True,
@@ -361,8 +361,8 @@ def main(
         pdf_height: int = 800,
         avatars: bool = True,
         add_disk_models_to_ui: bool = True,
-        page_title: str = "h2oGPT",
-        model_label_prefix: str = "h2oGPT",
+        page_title: str = "Ayudh AI",
+        model_label_prefix: str = "Ayudh Ai",
         favicon_path: str = None,
         visible_ratings: bool = False,
         reviews_file: str = None,

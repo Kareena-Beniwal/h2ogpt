@@ -1,0 +1,144 @@
+{
+  "niloy": {
+    "password": "niloy",
+    "userid": "39499ee5-93f9-45d4-8bc5-5c57a70e14d7",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled",
+        "emp"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null,
+        "collection_name": r"D:\Documents\GitHub\h2ogpt\emp"
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal",
+        "emp": "shared"
+      }
+    },
+    "model_options_state": [
+      [
+        "[]",
+        "HuggingFaceH4/zephyr-7b-beta",
+        "TheBloke/Llama-2-7B-Chat-GGUF",
+        "TheBloke/Xwin-LM-13B-V0.1-GPTQ",
+        "TheBloke/zephyr-7B-beta-AWQ",
+        "TheBloke/zephyr-7B-beta-GGUF",
+        "Yukang/LongAlpaca-70B",
+        "gpt-3.5-turbo",
+        "h2oai/h2ogpt-32k-codellama-34b-instruct",
+        "llama",
+        "llamacpp_path\\mistral-7b-instruct-v0.2.Q5_K_M.gguf",
+        "lmsys/vicuna-13b-v1.5-16k"
+      ]
+    ],
+    "lora_options_state": [
+      [
+        "[]"
+      ]
+    ],
+    "server_options_state": [
+      [
+        "[]"
+      ]
+    ],
+    "langchain_mode": "MyData",
+    "chat_state": {
+      "hi": [
+        [
+          [
+            "hi",
+            "Based on the provided context, there is no direct interaction or information related to the statement \"hi\" within it. The document only contains a Latin phrase \"Quod equidem non reprehendo;\" which translates to \"I myself do"
+          ]
+        ],
+        [
+          [
+            "hi",
+            null
+          ]
+        ]
+      ],
+      "hi_1": [
+        [
+          [
+            "hi",
+            "Based on the provided context, there is no direct interaction or information related to the statement \"hi\" within it. The document only contains a Latin phrase \"Quod equidem non reprehendo;\" which translates to \"I myself do not find fault with that"
+          ]
+        ],
+        [
+          [
+            "hi",
+            null
+          ]
+        ]
+      ],
+      "hi_2": [
+        [
+          [
+            "hi",
+            "Based on the provided context, there is no direct interaction or information related to the statement \"hi\" within it. The document only contains a Latin phrase \"Quod equidem non reprehendo;\" which translates to \"I myself do not find fault with that.\""
+          ]
+        ],
+        [
+          [
+            "hi",
+            null
+          ]
+        ]
+      ],
+      "hi_3": [
+        [
+          [
+            "hi",
+            "Based on the provided context, there is no direct interaction or information related to the statement \"hi\" within it. The document only contains a Latin phrase \"Quod equidem non reprehendo;\" which translates to \"I myself do not find fault with that.\" in"
+          ]
+        ],
+        [
+          [
+            "hi",
+            null
+          ]
+        ]
+      ],
+      "hi_4": [
+        [
+          [
+            "hi",
+            "Based on the provided context, there is no direct interaction or information related to the statement \"hi\" within it. The document only contains a Latin phrase \"Quod equidem non reprehendo;\" which translates to \"I myself do not find fault with that.\" in English. Therefore, it is not possible to provide an insightful and well-"
+          ]
+        ],
+        [
+          [
+            "hi",
+            null
+          ]
+        ]
+      ]
+    },
+    "text_output": [
+      [
+        "hi",
+        "Based on the provided context, there is no direct interaction or information related to the statement \"hi\" within it. The document only contains a Latin phrase \"Quod equidem non reprehendo;\" which translates to \"I myself do not find fault with that.\" in English. Therefore, it is not possible to provide an insightful and well-"
+      ]
+    ],
+    "text_output2": [
+      [
+        "hi",
+        null
+      ]
+    ],
+    "text_outputs": [
+      []
+    ]
+  }
+}

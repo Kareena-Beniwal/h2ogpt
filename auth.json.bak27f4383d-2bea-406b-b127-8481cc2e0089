@@ -1,0 +1,1253 @@
+{
+  "f319cad8-3dbf-42f7-a482-150f7095c1b2": {
+    "password": "f319cad8-3dbf-42f7-a482-150f7095c1b2",
+    "userid": "3d01752c-bf41-41ba-b27b-ba4c7d961047",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "488d3ac1-b064-4489-9d92-bbdf627886a3": {
+    "password": "488d3ac1-b064-4489-9d92-bbdf627886a3",
+    "userid": "488d3ac1-b064-4489-9d92-bbdf627886a3",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "4f2edd87-a0fb-4b04-b49d-cd21f63c74aa": {
+    "password": "4f2edd87-a0fb-4b04-b49d-cd21f63c74aa",
+    "userid": "4f2edd87-a0fb-4b04-b49d-cd21f63c74aa",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "9a246a43-068a-4390-a186-951e8da49d7e": {
+    "password": "9a246a43-068a-4390-a186-951e8da49d7e",
+    "userid": "9a246a43-068a-4390-a186-951e8da49d7e",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "2895df30-dd03-448d-893c-25004f5dbcbf": {
+    "password": "2895df30-dd03-448d-893c-25004f5dbcbf",
+    "userid": "2895df30-dd03-448d-893c-25004f5dbcbf",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "c6a36b5a-18b4-4bad-899c-5de3795dd1ff": {
+    "password": "c6a36b5a-18b4-4bad-899c-5de3795dd1ff",
+    "userid": "c6a36b5a-18b4-4bad-899c-5de3795dd1ff",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "a611847b-9662-4a73-8424-5523f47a1b81": {
+    "password": "a611847b-9662-4a73-8424-5523f47a1b81",
+    "userid": "a611847b-9662-4a73-8424-5523f47a1b81",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "4c494580-3473-4f08-a7e9-8b296b4211e3": {
+    "password": "4c494580-3473-4f08-a7e9-8b296b4211e3",
+    "userid": "4c494580-3473-4f08-a7e9-8b296b4211e3",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "c2f1c996-738c-428f-82b7-ed184d3fe5fc": {
+    "password": "c2f1c996-738c-428f-82b7-ed184d3fe5fc",
+    "userid": "c2f1c996-738c-428f-82b7-ed184d3fe5fc",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    },
+    "model_options_state": [
+      [
+        "[]",
+        "HuggingFaceH4/zephyr-7b-beta",
+        "TheBloke/Llama-2-7B-Chat-GGUF",
+        "TheBloke/Xwin-LM-13B-V0.1-GPTQ",
+        "TheBloke/zephyr-7B-beta-AWQ",
+        "TheBloke/zephyr-7B-beta-GGUF",
+        "Yukang/LongAlpaca-70B",
+        "gpt-3.5-turbo",
+        "h2oai/h2ogpt-32k-codellama-34b-instruct",
+        "llama",
+        "llamacpp_path\\mistral-7b-instruct-v0.2.Q5_K_M.gguf",
+        "lmsys/vicuna-13b-v1.5-16k"
+      ]
+    ],
+    "lora_options_state": [
+      [
+        "[]"
+      ]
+    ],
+    "server_options_state": [
+      [
+        "[]"
+      ]
+    ],
+    "text_output": [
+      [
+        "hi",
+        "Hello! How can I help you today? If you have any questions or need assistance with something, feel free to ask. I'm here to help. If you just want to chat, we can talk about almost anything you'd like. What's on your mind?"
+      ]
+    ],
+    "text_output2": [
+      [
+        "hi",
+        null
+      ]
+    ],
+    "langchain_mode": "LLM"
+  },
+  "2ea8bdd1-0783-4b7c-bd83-0d9b6e36dd9a": {
+    "password": "2ea8bdd1-0783-4b7c-bd83-0d9b6e36dd9a",
+    "userid": "2ea8bdd1-0783-4b7c-bd83-0d9b6e36dd9a",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "dbc770c9-c1ef-4c58-a088-597fcb56be43": {
+    "password": "dbc770c9-c1ef-4c58-a088-597fcb56be43",
+    "userid": "dbc770c9-c1ef-4c58-a088-597fcb56be43",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "c05e2a91-f237-4faa-9555-98f35a57fa29": {
+    "password": "c05e2a91-f237-4faa-9555-98f35a57fa29",
+    "userid": "c05e2a91-f237-4faa-9555-98f35a57fa29",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "86a042b0-fae0-4d2d-be9c-a1d958ec3317": {
+    "password": "86a042b0-fae0-4d2d-be9c-a1d958ec3317",
+    "userid": "86a042b0-fae0-4d2d-be9c-a1d958ec3317",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "b6cd7341-8341-46aa-ad75-ec1a736143b9": {
+    "password": "b6cd7341-8341-46aa-ad75-ec1a736143b9",
+    "userid": "b6cd7341-8341-46aa-ad75-ec1a736143b9",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "1f2419d9-06e3-474f-b51b-a256eeed40b8": {
+    "password": "1f2419d9-06e3-474f-b51b-a256eeed40b8",
+    "userid": "1f2419d9-06e3-474f-b51b-a256eeed40b8",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "f89fb221-f81e-4cf5-b7ff-187664eeabcb": {
+    "password": "f89fb221-f81e-4cf5-b7ff-187664eeabcb",
+    "userid": "f89fb221-f81e-4cf5-b7ff-187664eeabcb",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "6f188ad7-d37f-46fd-9d79-9fdd2c3a4962": {
+    "password": "6f188ad7-d37f-46fd-9d79-9fdd2c3a4962",
+    "userid": "6f188ad7-d37f-46fd-9d79-9fdd2c3a4962",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "a2228b87-72c0-45a3-90a8-b59f3ad769f8": {
+    "password": "a2228b87-72c0-45a3-90a8-b59f3ad769f8",
+    "userid": "a2228b87-72c0-45a3-90a8-b59f3ad769f8",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "d19f18ad-06e8-4dbc-b46a-daca66f09da7": {
+    "password": "d19f18ad-06e8-4dbc-b46a-daca66f09da7",
+    "userid": "d19f18ad-06e8-4dbc-b46a-daca66f09da7",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "705d15b8-d8f8-4973-84d6-f8758c95597a": {
+    "password": "705d15b8-d8f8-4973-84d6-f8758c95597a",
+    "userid": "705d15b8-d8f8-4973-84d6-f8758c95597a",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "101c240a-66bd-44ef-a7ec-b4c295eaf6c0": {
+    "password": "101c240a-66bd-44ef-a7ec-b4c295eaf6c0",
+    "userid": "101c240a-66bd-44ef-a7ec-b4c295eaf6c0",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "b4953210-9050-495b-97d8-f41ac955cdf2": {
+    "password": "b4953210-9050-495b-97d8-f41ac955cdf2",
+    "userid": "b4953210-9050-495b-97d8-f41ac955cdf2",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "d48c98db-f03d-4294-88b1-762ecc2fca89": {
+    "password": "d48c98db-f03d-4294-88b1-762ecc2fca89",
+    "userid": "d48c98db-f03d-4294-88b1-762ecc2fca89",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "411d2f40-cb3d-42f7-ad6e-128e3be8375d": {
+    "password": "411d2f40-cb3d-42f7-ad6e-128e3be8375d",
+    "userid": "411d2f40-cb3d-42f7-ad6e-128e3be8375d",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "5a8be972-d230-4394-8a99-c5d7769d144a": {
+    "password": "5a8be972-d230-4394-8a99-c5d7769d144a",
+    "userid": "5a8be972-d230-4394-8a99-c5d7769d144a",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "18940e36-e4c6-4f0e-9804-fad8c697eea8": {
+    "password": "18940e36-e4c6-4f0e-9804-fad8c697eea8",
+    "userid": "18940e36-e4c6-4f0e-9804-fad8c697eea8",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    },
+    "model_options_state": [
+      [
+        "[]",
+        "HuggingFaceH4/zephyr-7b-beta",
+        "TheBloke/Llama-2-7B-Chat-GGUF",
+        "TheBloke/Xwin-LM-13B-V0.1-GPTQ",
+        "TheBloke/zephyr-7B-beta-AWQ",
+        "TheBloke/zephyr-7B-beta-GGUF",
+        "Yukang/LongAlpaca-70B",
+        "gpt-3.5-turbo",
+        "h2oai/h2ogpt-32k-codellama-34b-instruct",
+        "h2oai/h2ogpt-4096-llama2-13b-chat",
+        "llamacpp_path/llama-2-7b-chat.Q6_K.gguf",
+        "lmsys/vicuna-13b-v1.5-16k",
+        "sentence-transformers/all-MiniLM-L6-v2"
+      ]
+    ],
+    "lora_options_state": [
+      [
+        "[]"
+      ]
+    ],
+    "server_options_state": [
+      [
+        "[]"
+      ]
+    ],
+    "text_output": [
+      [
+        "hello",
+        ""
+      ]
+    ],
+    "text_output2": [
+      [
+        "hello",
+        null
+      ]
+    ],
+    "langchain_mode": "LLM"
+  },
+  "santosh": {
+    "password": "123",
+    "userid": "05f4c5af-04d1-4213-977b-14004234b2b9",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+<<<<<<<< HEAD:auth.json.bak27f4383d-2bea-406b-b127-8481cc2e0089
+    }
+  },
+  "5d857d33-6545-48d9-aeda-1a127ef5de0c": {
+    "password": "5d857d33-6545-48d9-aeda-1a127ef5de0c",
+    "userid": "5d857d33-6545-48d9-aeda-1a127ef5de0c",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+========
+    },
+    "model_options_state": [
+      [
+        "[]",
+        "HuggingFaceH4/zephyr-7b-beta",
+        "TheBloke/Llama-2-7B-Chat-GGUF",
+        "TheBloke/Xwin-LM-13B-V0.1-GPTQ",
+        "TheBloke/zephyr-7B-beta-AWQ",
+        "TheBloke/zephyr-7B-beta-GGUF",
+        "Yukang/LongAlpaca-70B",
+        "gpt-3.5-turbo",
+        "h2oai/h2ogpt-32k-codellama-34b-instruct",
+        "h2oai/h2ogpt-4096-llama2-13b-chat",
+        "llama",
+        "llamacpp_path/llama-2-7b-chat.Q6_K.gguf",
+        "lmsys/vicuna-13b-v1.5-16k",
+        "sentence-transformers/all-MiniLM-L6-v2"
+      ]
+    ],
+    "lora_options_state": [
+      [
+        "[]"
+      ]
+    ],
+    "server_options_state": [
+      [
+        "[]"
+      ]
+    ],
+    "text_output": [
+      [
+        "hi",
+        "Hello! I'm here to help you in any way I can. Please feel free to ask me any question you have, and I will do"
+>>>>>>>> 31e44ccc64b24e85ade43a03c9913ddd3da22c23:auth.json
+      ],
+      [
+        "hello",
+        "Hello! It's nice to meet you. Is there something I can help you with or would you like to chat?"
+      ],
+      [
+        "who are you",
+        "Hello! I'm just an AI designed to assist and provide helpful responses to a wide range of questions and topics. I'm here to help you in any way I can,"
+      ],
+      [
+        "who designed you",
+        "Hello! I was trained by a team of researcher at Meta AI. They are a group of experienced machine learning engineers and researchers who specialize in developing and training AI models like me. My training data is based on a large corpus of text, which I use to learn patterns and relationships in language."
+      ]
+    ],
+    "text_output2": [
+      [
+        "hi",
+        null
+      ],
+      [
+        "hello",
+        null
+      ],
+      [
+        "who are you",
+        null
+      ],
+<<<<<<<< HEAD:auth.json.bak27f4383d-2bea-406b-b127-8481cc2e0089
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "9d49e12f-1ec0-4c66-ae0e-36eae6c63152": {
+    "password": "9d49e12f-1ec0-4c66-ae0e-36eae6c63152",
+    "userid": "9d49e12f-1ec0-4c66-ae0e-36eae6c63152",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "a5d17cb2-9fe2-42df-941a-51eeac995918": {
+    "password": "a5d17cb2-9fe2-42df-941a-51eeac995918",
+    "userid": "a5d17cb2-9fe2-42df-941a-51eeac995918",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "76bfae47-6695-4f19-8542-4ad4a25b5894": {
+    "password": "76bfae47-6695-4f19-8542-4ad4a25b5894",
+    "userid": "76bfae47-6695-4f19-8542-4ad4a25b5894",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "c9b4a0dd-a5f0-4a73-b882-95a341a70fbc": {
+    "password": "c9b4a0dd-a5f0-4a73-b882-95a341a70fbc",
+    "userid": "c9b4a0dd-a5f0-4a73-b882-95a341a70fbc",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "7b71227f-1a23-42d0-a345-133939be4005": {
+    "password": "7b71227f-1a23-42d0-a345-133939be4005",
+    "userid": "7b71227f-1a23-42d0-a345-133939be4005",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "24da63b2-ac5e-45fb-b5ff-e9578d482818": {
+    "password": "24da63b2-ac5e-45fb-b5ff-e9578d482818",
+    "userid": "24da63b2-ac5e-45fb-b5ff-e9578d482818",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "bfb3ea18-7b08-41e4-90da-3ffaa192ba7f": {
+    "password": "bfb3ea18-7b08-41e4-90da-3ffaa192ba7f",
+    "userid": "bfb3ea18-7b08-41e4-90da-3ffaa192ba7f",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "02d907e9-9cca-4eb1-b54b-c2655928b744": {
+    "password": "02d907e9-9cca-4eb1-b54b-c2655928b744",
+    "userid": "02d907e9-9cca-4eb1-b54b-c2655928b744",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "cc623989-e1e8-46ad-8f1c-6dfb2fd5f56e": {
+    "password": "cc623989-e1e8-46ad-8f1c-6dfb2fd5f56e",
+    "userid": "cc623989-e1e8-46ad-8f1c-6dfb2fd5f56e",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "71f12562-16cb-4dc3-8526-9d9f3374ecd8": {
+    "password": "71f12562-16cb-4dc3-8526-9d9f3374ecd8",
+    "userid": "71f12562-16cb-4dc3-8526-9d9f3374ecd8",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "de8028ff-b7f0-40d8-a17e-e6b289c6dea4": {
+    "password": "de8028ff-b7f0-40d8-a17e-e6b289c6dea4",
+    "userid": "de8028ff-b7f0-40d8-a17e-e6b289c6dea4",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "29648189-2d42-48f1-b5c6-4d8a2eccb783": {
+    "password": "29648189-2d42-48f1-b5c6-4d8a2eccb783",
+    "userid": "29648189-2d42-48f1-b5c6-4d8a2eccb783",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "39cb720b-d5bd-4f26-bf4f-6ad89d1cd370": {
+    "password": "39cb720b-d5bd-4f26-bf4f-6ad89d1cd370",
+    "userid": "39cb720b-d5bd-4f26-bf4f-6ad89d1cd370",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "d7e38d26-affb-4320-bf06-5ee070a51eb3": {
+    "password": "d7e38d26-affb-4320-bf06-5ee070a51eb3",
+    "userid": "d7e38d26-affb-4320-bf06-5ee070a51eb3",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "320898ee-7ad0-479e-8635-a3cc9db82055": {
+    "password": "320898ee-7ad0-479e-8635-a3cc9db82055",
+    "userid": "320898ee-7ad0-479e-8635-a3cc9db82055",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+  },
+  "e0acecc1-2759-4f10-bfdb-1527438bdeaa": {
+    "password": "e0acecc1-2759-4f10-bfdb-1527438bdeaa",
+    "userid": "e0acecc1-2759-4f10-bfdb-1527438bdeaa",
+    "selection_docs_state": {
+      "langchain_modes": [
+        "UserData",
+        "MyData",
+        "LLM",
+        "Disabled"
+      ],
+      "langchain_mode_paths": {
+        "UserData": null
+      },
+      "langchain_mode_types": {
+        "UserData": "shared",
+        "github h2oGPT": "shared",
+        "DriverlessAI docs": "shared",
+        "wiki": "shared",
+        "wiki_full": "",
+        "MyData": "personal",
+        "LLM": "personal",
+        "Disabled": "personal"
+      }
+    }
+
+========
+      [
+        "who designed you",
+        null
+      ]
+    ],
+    "langchain_mode": "LLM"
+  }
+>>>>>>>> 31e44ccc64b24e85ade43a03c9913ddd3da22c23:auth.json
+}

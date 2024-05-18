@@ -226,7 +226,7 @@ def ask_block(kwargs, instruction_label, visible_upload, file_types, mic_sources
                 attach_button = gr.UploadButton(
                     elem_id="attach-button" if visible_upload else None,
                     value=None,
-                    label="Upload",
+                    label="Upload File",
                     size="sm",
                     min_width=mw0,
                     file_types=['.' + x for x in file_types],
@@ -235,7 +235,7 @@ def ask_block(kwargs, instruction_label, visible_upload, file_types, mic_sources
                 add_button = gr.Button(
                     elem_id="add-button" if visible_upload and not kwargs[
                         'actions_in_sidebar'] else None,
-                    value="Ingest",
+                    value="Ingest URL",
                     size="sm",
                     min_width=mw0,
                     visible=visible_upload and not kwargs['actions_in_sidebar'])
@@ -733,11 +733,19 @@ def go_gradio(**kwargs):
                                         guest_name=kwargs['guest_name'],
                                         )
     if kwargs['auth_access'] == 'closed':
-        auth_message1 = "Closed access"
+        auth_message1 = f"""
+                <div style="display:flex; justify-content:center; margin-bottom:30px; ">
+                    <div style="height: 90px; width: 90px; justify-content:center;"><img src="https://i.postimg.cc/qqx1W7p4/ayudh-logo-removebg-preview.png" alt="Ayudh Logo"></div>
+                    <h1 style="line-height:60px">AYUDH AI</h1>
+                </div>
+                """
     else:
-        auth_message1 = "WELCOME to %s!  Open access" \
-                        " (%s/%s or any unique user/pass)" % (page_title, kwargs['guest_name'], kwargs['guest_name'])
-
+        auth_message1 = f"""
+                <div style="display:flex; justify-content:center; margin-bottom:30px; ">
+                    <div style="height: 90px; width: 90px; justify-content:center;"><img src="https://i.postimg.cc/qqx1W7p4/ayudh-logo-removebg-preview.png" alt="Ayudh Logo"></div>
+                    <h1 style="line-height:60px">AYUDH AI</h1>
+                </div>
+                """
     if kwargs['auth_message'] is not None:
         auth_message = kwargs['auth_message']
     else:
@@ -1090,7 +1098,7 @@ def go_gradio(**kwargs):
         with normal_block:
             side_bar = gr.Column(elem_id="sidebar", scale=1, min_width=250, visible=kwargs['visible_side_bar'])
             with side_bar:
-                with gr.Accordion("Chats", open=False, visible=True):
+                with gr.Accordion("Chats", open=False, visible=False):
                     radio_chats = gr.Radio(value=None, label="Saved Chats", show_label=False,
                                            visible=True, interactive=True,
                                            type='value')
@@ -1163,18 +1171,18 @@ def go_gradio(**kwargs):
                 if not kwargs['actions_in_sidebar']:
                     max_quality = gr.Checkbox(label="Max Ingest Quality",
                                               value=kwargs['max_quality'],
-                                              visible=not is_public)
+                                              visible=False)
                     gradio_upload_to_chatbot = gr.Checkbox(label="Add Doc to Chat",
-                                                           value=kwargs['gradio_upload_to_chatbot'])
+                                                           value=kwargs['gradio_upload_to_chatbot'], visible=False)
 
                 if not kwargs['actions_in_sidebar']:
                     add_chat_history_to_context = gr.Checkbox(label="Include Chat History",
                                                               value=kwargs[
-                                                                  'add_chat_history_to_context'])
+                                                                  'add_chat_history_to_context'],visible=False)
                     add_search_to_context = gr.Checkbox(label="Include Web Search",
                                                         value=kwargs['add_search_to_context'],
                                                         visible=serp_visible)
-                resources_acc_label = "Resources" if not is_public else "Collections"
+                resources_acc_label = "Chat/RAG" if not is_public else "Collections"
                 langchain_mode_radio_kwargs = dict(
                     choices=langchain_choices0,
                     value=kwargs['langchain_mode'],
@@ -1197,7 +1205,7 @@ def go_gradio(**kwargs):
                                                label="Subset",
                                                value=DocumentSubset.Relevant.name,
                                                interactive=True,
-                                               visible=not is_public,
+                                               visible=False,
                                                )
                     if kwargs['actions_in_sidebar']:
                         langchain_action = gr.Radio(
@@ -1218,7 +1226,7 @@ def go_gradio(**kwargs):
                         label="Agents",
                         multiselect=True,
                         interactive=True,
-                        visible=not is_public and len(allowed_agents) > 0,
+                        visible=False,
                         elem_id="langchain_agents",
                         filterable=False)
 
@@ -1245,8 +1253,8 @@ def go_gradio(**kwargs):
                     else:
                         doc_counts_str = "Name: %s\nDocs: Unset\nChunks: Unset" % kwargs['langchain_mode']
                     text_doc_count = gr.Textbox(lines=3, label="Doc Counts", value=doc_counts_str,
-                                                visible=visible_doc_track)
-                    text_file_last = gr.Textbox(lines=1, label="Newest Doc", value=None, visible=visible_doc_track)
+                                                visible=False)
+                    text_file_last = gr.Textbox(lines=1, label="Newest Doc", value=None, visible=False)
                     new_files_last = gr.Textbox(label="New Docs full paths as dict of full file names and content",
                                                 value='{}',
                                                 visible=False)
@@ -1272,54 +1280,7 @@ def go_gradio(**kwargs):
                                 inputs=side_bar_text,
                                 outputs=[side_bar_text, side_bar,side_bar_btn],
                                 **noqueue_kwargs)
-            side_bar_right = gr.Column(elem_id="sidebar_right", scale=1, min_width=150, visible=kwargs['visible_side_bar'])
-            with side_bar_right:
-                chat_history_tab = gr.TabItem("Chat History", visible=True)
-                with chat_history_tab:
-                    with gr.Row():
-                        with gr.Column(scale=1):
-                            remove_chat_btn = gr.Button(value="Remove Selected Saved Chats", visible=True, size='sm')
-                            flag_btn = gr.Button("Flag Current Chat", size='sm')
-                            export_chats_btn = gr.Button(value="Export Chats to Download", size='sm')
-                        with gr.Column(scale=4):
-                            pass
-                    with gr.Row():
-                        chats_file = gr.File(interactive=False, label="Download Exported Chats")
-                        chatsup_output = gr.File(label="Upload Chat File(s)",
-                                                 file_types=['.json'],
-                                                 file_count='multiple',
-                                                 elem_id="warning", elem_classes="feedback")
-                    with gr.Row():
-                        if 'mbart-' in kwargs['model_lower']:
-                            src_lang = gr.Dropdown(list(languages_covered().keys()),
-                                                   value=kwargs['src_lang'],
-                                                   label="Input Language")
-                            tgt_lang = gr.Dropdown(list(languages_covered().keys()),
-                                                   value=kwargs['tgt_lang'],
-                                                   label="Output Language")
-
-                    chat_exception_text = gr.Textbox(value="", visible=True, label='Chat Exceptions',
-                                                     interactive=False)
-                    with gr.Row():
-                        count_chat_tokens_btn = gr.Button(value="Count Chat Tokens",
-                                                          visible=not is_public and not kwargs['model_lock'],
-                                                          interactive=not is_public, size='sm')
-                        chat_token_count = gr.Textbox(label="Chat Token Count Result", value=None,
-                                                      visible=not is_public and not kwargs['model_lock'],
-                                                      interactive=False)
-
-            toggle_btn_right = gr.Column(scale=0, elem_id='toggle_sidebar_btn_right', min_width=15, visible=kwargs['visible_side_bar'])
-            side_bar_text_right = gr.Textbox('on' if kwargs['visible_side_bar'] else 'off', visible=False, interactive=False)
-            with toggle_btn_right:
-                side_bar_btn_right = gr.Button(">>", size='sm', visible=True, elem_id='toggle_sidebar_right')
-                def visible_toggle_sidebar_right(x):
-                    x = 'off' if x == 'on' else 'on'
-                    return x, gr.update(visible=True if x == 'on' else False), gr.update(value='>>' if x == 'on' else '<<')
-                side_bar_btn_right.click(fn=visible_toggle_sidebar_right,
-                                        inputs=side_bar_text_right,
-                                        outputs=[side_bar_text_right, side_bar_right, side_bar_btn_right],
-                                        **noqueue_kwargs)
-
+            
             col_tabs = gr.Column(elem_id="col-tabs", scale=10)
             with col_tabs, gr.Tabs():
                 if kwargs['chat_tables']:
@@ -1646,6 +1607,8 @@ def go_gradio(**kwargs):
                         chat_token_count = gr.Textbox(label="Chat Token Count Result", value=None,
                                                       visible=not is_public and not kwargs['model_lock'],
                                                       interactive=False)
+                        
+
                 expert_tab = gr.TabItem("Expert", visible=kwargs['visible_expert_tab'])
                 with expert_tab:
                     gr.Markdown("Prompt Control")
@@ -2488,7 +2451,7 @@ def go_gradio(**kwargs):
                     with system_row:
                         with gr.Accordion("Admin", open=False, visible=True):
                             with gr.Column():
-                                close_btn = gr.Button(value="Shutdown h2oGPT", size='sm',
+                                close_btn = gr.Button(value="Shutdown Ayudh AI", size='sm',
                                                       visible=kwargs['close_button'] and kwargs[
                                                           'h2ogpt_pid'] is not None)
                                 with gr.Row():
@@ -2534,21 +2497,22 @@ def go_gradio(**kwargs):
                     description += """<p><b> DISCLAIMERS: </b><ul><i><li>The model was trained on The Pile and other data, which may contain objectionable content.  Use at own risk.</i></li>"""
                     if kwargs['load_8bit']:
                         description += """<i><li> Model is loaded in 8-bit and has other restrictions on this host. UX can be worse than non-hosted version.</i></li>"""
-                    description += """<i><li>Conversations may be used to improve h2oGPT.  Do not share sensitive information.</i></li>"""
+                    description += """<i><li>Conversations may be used to improve Ayudh AI.  Do not share sensitive information.</i></li>"""
                     if 'h2ogpt-research' in kwargs['base_model']:
                         description += """<i><li>Research demonstration only, not used for commercial purposes.</i></li>"""
-                    description += """<i><li>By using h2oGPT, you accept our <a href="https://github.com/h2oai/h2ogpt/blob/main/docs/tos.md">Terms of Service</a></i></li></ul></p>"""
+                    description += """<i><li>By using Ayudh AI, you accept our <a href="https://github.com/h2oai/h2ogpt/blob/main/docs/tos.md">Terms of Service</a></i></li></ul></p>"""
                     gr.Markdown(value=description, show_label=False)
 
-                login_tab = gr.TabItem("Log-in/out" if kwargs['auth'] else "Login", visible=kwargs['visible_login_tab'])
+                login_tab = gr.TabItem("Log-in/out" if kwargs['auth'] else "Login") \
+                    if kwargs['visible_login_tab'] else gr.Row(visible=False)
                 with login_tab:
                     extra_login = "\nDaily maintenance at midnight PST will not allow reconnection to state otherwise." if is_public else ""
                     gr.Markdown(
-                        value="#### Login page to persist your state (database, documents, chat, chat history, model list)%s" % extra_login)
+                        value="#### Login to Another account %s" % extra_login)
                     username_text = gr.Textbox(label="Username")
                     password_text = gr.Textbox(label="Password", type='password', visible=True)
-                    login_msg = "Login (pick unique user/pass to persist your state)" if kwargs[
-                                                                                             'auth_access'] == 'open' else "Login (closed access)"
+                    login_msg = "Login" if kwargs[
+                                                                                             'auth_access'] == 'open' else "Login"
                     login_btn = gr.Button(value=login_msg)
                     num_lock_button = gr.Button(visible=False)
                     num_model_lock_value_output = gr.Number(value=len(text_outputs), visible=False, precision=0)
@@ -2577,6 +2541,194 @@ def go_gradio(**kwargs):
                         {description_bottom}
                         {task_info_md}
                         """)
+                def load_data():
+                    with open("auth.json", "r+") as f:
+                        data = json.load(f)
+                    return data
+               
+                def save_data(data):
+                    with open("auth.json", "w") as f:
+                        json.dump(data, f, indent=2)
+                data = load_data()
+                def add_user(new_user, new_password, selected_repositories):
+                    
+                    if not new_password or not new_user:
+                        return gr.Info("username and password can not be empty")
+                    elif new_user in data:
+                        return gr.Info("user already exists")
+                    # Creating langchain_mode_paths dictionary
+                    langchain_mode_paths = {collection: path for collection, path in data["boss"]["selection_docs_state"]["langchain_mode_paths"].items() if collection in selected_repositories}
+
+                    # Creating langchain_mode_types dictionary
+                    langchain_mode_types = {collection: status for collection, status in data["boss"]["selection_docs_state"]["langchain_mode_types"].items() if collection in selected_repositories}
+                    selected_docs_state={}
+                    selected_docs_state["langchain_mode_paths"]=langchain_mode_paths
+                    selected_docs_state["langchain_mode_types"]=langchain_mode_types
+                    selected_docs_state["langchain_mode"]=selected_repositories
+                    data[new_user] = {
+                        "password": new_password,
+                        "userid": new_user,
+                        "text_outputs": [None],
+                        "selection_docs_state": selected_docs_state,
+                        "model_options_state": [["[]"]],
+                        "lora_options_state": [["[]"]],
+                        "server_options_state": [["[]"]]
+                    }
+                    save_data(data)
+                    
+                    return gr.Info(f"User '{new_user}' added successfully.")
+
+                def update_user(selected,new_user, new_password, selected_repositories):
+                    
+                    if new_user in data and new_user!=selected:
+                        return gr.Info(f"User '{new_user}' already exists. Please choose a different username.")
+                    else:
+                        data[new_user]=data.pop(selected)
+                        save_data(data)
+                        langchain_mode_paths = {collection: path for collection, path in data["boss"]["selection_docs_state"]["langchain_mode_paths"].items() if collection in selected_repositories}
+
+                    # Creating langchain_mode_types dictionary
+                        langchain_mode_types = {collection: status for collection, status in data["boss"]["selection_docs_state"]["langchain_mode_types"].items() if collection in selected_repositories}
+                        data[new_user] = {
+                            "password": new_password,
+                            "userid": new_user,
+                            "text_outputs": [None],
+                            "langchain_mode": selected_repositories,
+                            "langchain_mode_paths": langchain_mode_paths,
+                            "langchain_mode_types": langchain_mode_types,
+                            "model_options_state": [["[]"]],
+                            "lora_options_state": [["[]"]],
+                            "server_options_state": [["[]"]]
+                        }
+                        save_data(data)
+                        gr.Info(f"User '{selected}' updated successfully.")
+
+                        return gr.update(choices=[user for user in data.keys()])
+                        
+
+                def delete_user(users):
+                    for user in users:
+                        if user in data:
+                            del data[user]
+                    save_data(data)
+                    gr.Info("Users deleted successfully.")
+                    
+                    return gr.update(choices=[user for user in data.keys()])
+
+                
+                
+                kwargs['visible_dashboard_tab'] = True 
+                dashboard_tab = gr.TabItem("Dashboard") if kwargs.get('visible_dashboard_tab', False) else gr.Row(visible=False)
+                
+                with dashboard_tab:
+                # Create sub-tabs for Add, Update, and Delete
+                    add_tab = gr.TabItem("Add User")
+                    update_tab = gr.TabItem("Update User")
+                    delete_tab = gr.TabItem("Delete User")
+                    output_text = gr.Textbox()  # Output text box for displaying messages
+
+                    # UI elements for Add User tab
+                    with add_tab:
+                        with gr.Row():
+                            with gr.Column(scale=1):
+                                user_id = gr.Textbox(label="User ID")
+                                password = gr.Textbox(label="Password", type="password")
+                                choices=(mode for mode in data["boss"]["selection_docs_state"]["langchain_modes"])
+
+                                repositories=gr.Dropdown(choices,multiselect=True,type='value')
+                        with gr.Row():
+                            add_user_button = gr.Button("Add")
+                            new_user = user_id
+                            new_password = password
+                            selected_repositories = repositories
+                            
+                            
+                            add_user_msg = add_user_button.click(fn=add_user,
+                            inputs=[new_user, new_password,selected_repositories],
+                            outputs=[],
+                            **noqueue_kwargs)
+                            # gr.Info(add_user_msg)
+                            
+                    # UI elements for Update User tab
+                    with update_tab:
+                        
+                        
+                        with gr.Row():
+                            with gr.Column(scale=1):
+                                selected_user = gr.Dropdown(label="Select User", choices=list(data.keys()))
+                                new_user = gr.Textbox(label="New Username")
+                                new_password = gr.Textbox(label="New Password", type="password")
+                                choices=(mode for mode in data["boss"]["selection_docs_state"]["langchain_modes"])
+                                repositories=gr.Dropdown(choices,multiselect=True,type='value')
+                        with gr.Row():
+                            update_button = gr.Button("Update")
+                            
+                            update_user_msg = update_button.click(fn=update_user,
+                            inputs=[selected_user,new_user, new_password,repositories],
+                            outputs=[selected_user],
+                            **noqueue_kwargs)
+                                                
+                            
+
+                    # UI elements for Delete User tab
+                    with delete_tab:
+                        with gr.Row():
+                            users=[user for user in data.keys()]
+                            selected_users=gr.Dropdown(users,multiselect=True,type='value')
+                        with gr.Row():
+                            delete_button = gr.Button("Delete")
+                            delete_button.click(fn=delete_user,
+                                                inputs=[selected_users],
+                                                outputs=[selected_users],
+                                                **noqueue_kwargs)   
+                            
+            side_bar_right = gr.Column(elem_id="sidebar_right", scale=1, min_width=150, visible=kwargs['visible_side_bar'])
+            with side_bar_right:
+                chat_history_tab = gr.TabItem("Chat History", visible=True)
+                with chat_history_tab:
+                    with gr.Row():
+                        with gr.Column(scale=1):
+                            remove_chat_btn = gr.Button(value="Remove Selected Saved Chats", visible=True, size='sm')
+                            flag_btn = gr.Button("Flag Current Chat", size='sm')
+                            export_chats_btn = gr.Button(value="Export Chats to Download", size='sm')
+                        with gr.Column(scale=4):
+                            pass
+                    with gr.Row():
+                        chats_file = gr.File(interactive=False, label="Download Exported Chats")
+                        chatsup_output = gr.File(label="Upload Chat File(s)",
+                                                 file_types=['.json'],
+                                                 file_count='multiple',
+                                                 elem_id="warning", elem_classes="feedback")
+                    with gr.Row():
+                        if 'mbart-' in kwargs['model_lower']:
+                            src_lang = gr.Dropdown(list(languages_covered().keys()),
+                                                   value=kwargs['src_lang'],
+                                                   label="Input Language")
+                            tgt_lang = gr.Dropdown(list(languages_covered().keys()),
+                                                   value=kwargs['tgt_lang'],
+                                                   label="Output Language")
+
+                    chat_exception_text = gr.Textbox(value="", visible=True, label='Chat Exceptions',
+                                                     interactive=False)
+                    with gr.Row():
+                        count_chat_tokens_btn = gr.Button(value="Count Chat Tokens",
+                                                          visible=not is_public and not kwargs['model_lock'],
+                                                          interactive=not is_public, size='sm')
+                        chat_token_count = gr.Textbox(label="Chat Token Count Result", value=None,
+                                                      visible=not is_public and not kwargs['model_lock'],
+                                                      interactive=False)
+
+            toggle_btn_right = gr.Column(scale=0, elem_id='toggle_sidebar_btn_right', min_width=15, visible=kwargs['visible_side_bar'])
+            side_bar_text_right = gr.Textbox('on' if kwargs['visible_side_bar'] else 'off', visible=False, interactive=False)
+            with toggle_btn_right:
+                side_bar_btn_right = gr.Button(">>", size='sm', visible=True, elem_id='toggle_sidebar_right')
+                def visible_toggle_sidebar_right(x):
+                    x = 'off' if x == 'on' else 'on'
+                    return x, gr.update(visible=True if x == 'on' else False), gr.update(value='>>' if x == 'on' else '<<')
+                side_bar_btn_right.click(fn=visible_toggle_sidebar_right,
+                                        inputs=side_bar_text_right,
+                                        outputs=[side_bar_text_right, side_bar_right, side_bar_btn_right],
+                                        **noqueue_kwargs)
 
         # Get flagged data
         zip_data1 = functools.partial(zip_data, root_dirs=['flagged_data_points', kwargs['save_dir']])
@@ -3141,14 +3293,14 @@ def go_gradio(**kwargs):
                 requests_state1['username'] = username1
             if (requests_state1['username'] == get_userid_direct(db1s)) and is_uuid4(requests_state1['username']):
                 # still pre-login if both are same hash
-                label_instruction1 = 'Ask or Ingest'
+                label_instruction1 = 'Ask or Upload File/URL'
             else:
                 username = requests_state1['username']
                 if username and split_google in username:
                     real_name = split_google.join(username.split(split_google)[0:1])
                 else:
                     real_name = username
-                label_instruction1 = 'Ask or Ingest, %s' % real_name
+                label_instruction1 = 'Ask or Upload File/URL, %s' % real_name
             return db1s, selection_docs_state1, requests_state1, roles_state1, \
                 model_options_state1, lora_options_state1, server_options_state1, \
                 chat_state1, \
@@ -6872,7 +7024,7 @@ def go_gradio(**kwargs):
         server_port = int(server_port)
 
     # NOTE: Dynamically added paths won't work unless relative to root and not public
-    allowed_paths = []
+    allowed_paths = ["ai_test_data"]
     allowed_paths += [os.path.abspath(v) for k, v in kwargs['langchain_mode_paths'].items() if v]
     allowed_paths += [os.path.abspath(x) for x in kwargs['extra_allowed_paths']]
     blocked_paths = [os.path.abspath(x) for x in kwargs['blocked_paths']]
