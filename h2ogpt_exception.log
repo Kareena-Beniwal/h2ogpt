@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/win_run_app.py", line 150, in main
+    _main()
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/win_run_app.py", line 135, in _main
+    from generate import entrypoint_main as main_h2ogpt
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/generate.py", line 11, in <module>
+    from src.gen import main
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/src/gen.py", line 17, in <module>
+    import filelock
+ModuleNotFoundError: No module named 'filelock'
+Traceback (most recent call last):
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/win_run_app.py", line 150, in main
+    _main()
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/win_run_app.py", line 135, in _main
+    from generate import entrypoint_main as main_h2ogpt
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/generate.py", line 11, in <module>
+    from src.gen import main
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/src/gen.py", line 17, in <module>
+    import filelock
+ModuleNotFoundError: No module named 'filelock'
+Traceback (most recent call last):
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/win_run_app.py", line 150, in main
+    _main()
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/win_run_app.py", line 135, in _main
+    from generate import entrypoint_main as main_h2ogpt
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/generate.py", line 11, in <module>
+    from src.gen import main
+  File "/media/kareena-beniwal/New Volume/Ayudh_AI_internship/h2ogpt/src/gen.py", line 17, in <module>
+    import filelock
+ModuleNotFoundError: No module named 'filelock'
